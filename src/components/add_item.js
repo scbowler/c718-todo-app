@@ -10,6 +10,11 @@ class AddItem extends Component {
         e.preventDefault();
 
         this.props.add(this.state);
+
+        this.setState({
+            title: '',
+            details: ''
+        });
     }
 
     render(){
